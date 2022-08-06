@@ -21,3 +21,5 @@ dos principais tipos de ciclo Rankine ideal (Simples, com Regeneração e com Re
 Todas as funcionalidades foram exaustivamente validadas por meio das bibliografias consagradas
 da Termodinâmica com seus exemplos e exercícios práticos, mostrando uma excelente confiabilidade
 nos cálculos. 
+
+![alt text](https://github.com/[douglas-dm9]/[Termodesk]/images-for-readme/image.jpg?raw=true)
