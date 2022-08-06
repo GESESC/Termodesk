@@ -1,0 +1,9 @@
+.tabs__content{
+    display: none;
+}
+.tabs__content--active{
+    display: block;
+}
+.tabs__button--active{
+    background-color: blue;
+}

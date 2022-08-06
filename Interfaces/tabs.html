@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="eel.js"></script>
+    <link rel="stylesheet" href="./tabs.css" >
+
+</head>
+<body>
+    
+
+    <div class="tabs">
+        <div class="tabs__sidebar">
+            <button class="tabs__button " data-for-tab="1">#1</button>
+            <button class="tabs__button" data-for-tab="2">#2</button>
+            <button class="tabs__button" data-for-tab="3">#3</button>
+        </div>
+        <div class="tabs__content tabs__content--active" data-tab="0">
+            Conteudo 0
+        </div>
+        <div class="tabs__content" data-tab="1">
+            Conteudo 1
+        </div>
+        <div class="tabs__content" data-tab="2">
+            Conteudo 2
+        </div>
+        <div class="tabs__content" data-tab="3">
+            Conteudo 3
+        </div>
+        <div class="tabs__content" data-tab="4">
+            Conteudo 4
+        </div>
+        <div class="tabs__content" data-tab="5">
+            Conteudo 5
+        </div>
+        
+    </div>
+
+    <script>
+        function setupTabs (){
+            document.querySelectorAll(".tabs__button").forEach( button => {
+                button.addEventListener("click", () =>{
+                    const sideBar = button.parentElement
+                    const tabsContainer = sideBar.parentElement
+                    const tabNumber = button.dataset.forTab
+                    const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`)
+
+                    sideBar.querySelectorAll(".tabs__button").forEach(button => {
+                        button.classList.remove("tabs__button--active")
+                    })
+                    tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
+                        tab.classList.remove("tabs__content--active")
+                    })
+                    button.classList.add("tabs__button--active")
+                    tabToActivate.classList.add("tabs__content--active")
+                })
+            })
+        }
+
+        document.addEventListener("DOMContentLoaded", ()=>{
+            setupTabs()
+        })
+    </script>
+
+</body>
+</html>

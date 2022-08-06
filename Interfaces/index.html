@@ -1,0 +1,309 @@
+<!-- https://www.youtube.com/watch?v=Ay93z3mZuh8 -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="eel.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    
+    <title>Termodesk</title>
+
+  </head>
+  <body>
+      <div class="main">
+        <header>
+
+        </header>
+
+        <div class="container">
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-titulo">
+                        <h3>Termodesk</h3>
+                        <br><br>
+                        <p> O primeiro software didático para o estudo de disciplinas da área térmica e de fluidos. </p>
+                    </div>
+                    <button class="tabs-button " data-for-tab="1"><i class="fas fa-flask"></i> Proriedades de Substância Pura</button><br>
+                    <button class="tabs-button" data-for-tab="2"><i class="fas fa-wind"></i> Proriedades de Gás Ideal do Ar</button><br>
+                    <button class="tabs-button" data-for-tab="3"><i class="fas fa-water"></i> Ciclo Rankine Simples</button><br>
+                    <button class="tabs-button" data-for-tab="4"><i class="fas fa-fire"></i> Ciclo Rankine com Reaquecimento</button><br>
+                    <button class="tabs-button" data-for-tab="5"><i class="fas fa-fire"></i> Ciclo Rankine com Regeneração</button><br>
+                </div>
+                <div class="tabs-content tabs-content-active" data-tab="0">
+                    <div class="box-forms">
+                        
+                        <h3>Selecione a função desejada</h3>
+                        <img src="./undraw_Calculator_0evy.svg" alt=""  >
+                        
+                    </div>
+                </div>
+                <div class="tabs-content" data-tab="1">
+                    <div class="box-forms">
+                        <!--Primeiro Formulário - Substância Pura-->
+                        <form action="">
+                            <fieldset>
+                                
+                                <legend><i class="fas fa-flask"></i> Proriedades de Substância Pura</legend>
+                                <div class="inputBox">
+                                    <label for="prop1_type" class="labelInput">Propriedade 1</label><br>
+                                    <input type="text"  placeholder="Escolha" name="prop1_type" id="prop1_type" class="inputUser" list="prop1_list"  tabIndex="1" autofocus >
+                                    <datalist id="prop1_list">
+                                        <option value="T">Temperatura [K] </option>
+                                        <option value="P">Pressão [kPa] </option>
+                                        <option value="Q">Título [0-1]</option>
+                                        <option value="H">Entalpia [kJ/kg]</option>
+                                        <option value="S">Entropia [kJ/kg.K]</option>
+                                        <option value="U">Energia interna [kJ/kg]</option>
+                                        <option value="D">Volume específico [m<sup>3</sup>/kg]</option> 
+                                    </datalist>
+                                </div>
+                                <div class="inputBox">
+                                    <label for="prop1_value" class="labelInput">Valor: </label><br>
+                                    <input type="number" name="prop1_value" id="prop1_value" class="inputUser"  placeholder="Digite no SI"   tabIndex="2" >
+                                </div>
+                                <div class="inputBox">
+                                    <label for="prop2_type" class="labelInput">Propriedade 2</label><br>
+                                    <input type="text"  placeholder="Escolha" name="prop2_type" id="prop2_type" class="inputUser" list="prop2_list"   tabIndex="3" >
+                                        <datalist id="prop2_list">
+                                        <option value="T">Temperatura [K] </option>
+                                        <option value="P">Pressão [kPa] </option>
+                                        <option value="Q">Título [0-1]</option>
+                                        <option value="H">Entalpia [kJ/kg]</option>
+                                        <option value="S">Entropia [kJ/kg.K]</option>
+                                        <option value="U">Energia interna [kJ/kg]</option>
+                                        <option value="D">Volume específico [m<sup>3</sup>/kg]</option> 
+                                        </datalist>
+                                </div>
+                                <div class="inputBox">
+                                    <label for="prop2_value" class="labelInput">Valor: </label><br>
+                                    <input type="tel" name="prop2_value" id="prop2_value" class="inputUser"  placeholder="Digite no SI"   tabIndex="4" >
+                                </div>
+                                <div class="inputBox">
+                                    <label for="fluid_type" class="labelInput">Fluido </label><br>
+                                    <input type="text"  placeholder="Escolha" name="fluid_type" id="fluid_type" class="inputUser" list="fluid_list"    tabIndex="5" >
+                                        <datalist id="fluid_list">
+                                            <option value="NH3">Amônia</option>
+                                            <option value="Water">Água</option>
+                                            <option value="R134A">R134a</option>
+                                            <option value="R113">R113</option>
+                                        </datalist>
+                                </div>
+                                <div class="submit">
+                                    <button type="submit" name="submit" id="submit"    tabIndex="6" onclick="Get_SubstanciaPura()">Calcular</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tabs-content" data-tab="2">
+                    <div class="box-forms">
+                        <!--Segundo Formulário- Gás ideal -->
+                        <form action="">
+                            <fieldset>
+                                <legend><i class="fas fa-wind"></i> Propriedades de Gás Ideal do Ar</legend>            
+                                <div class="inputBox">
+                                    <label for="press" class="labelInput">Pressão: </label>
+                                    <input  type="number"  name="press" id="press" class="inputUser" placeholder="Digite em kPa" tabIndex="7" autofocus>
+
+                                </div>
+                                <div class="inputBox">
+                                    <label for="temp" class="labelInput">Temperatura: </label>
+                                    <input  type="number" name="temp"  id="temp" class="inputUser"  placeholder="Digite em graus Kelvin" tabIndex="8">
+                                </div>
+                                <div class="submit">
+                                    <button type="submit" name="submit" id="submit" tabIndex="9" onclick="Get_Gas_Ideal()">Calcular</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tabs-content" data-tab="3">
+                    <div class="box-forms">
+                        <!--Terceiro Formulário - Rankine Simples-->
+                        <form action="">
+                            <fieldset>
+                                <legend><i class="fas fa-water"></i> Ciclo Rankine Simples</legend>
+                                <div class="inputBox">
+                                    <label for="p1_rs" class="labelInput">Pressão inicial: </label>
+                                    <input  type="number" name="p1_rs" id="p1_rs" class="inputUser"  placeholder="Digite em kPa" tabIndex="10" autofocus>
+                                </div>
+                                <div class="inputBox">
+                                    <label for="p2_rs" class="labelInput">Pressão na saída da bomba:</label>
+                                    <input  type="number" name="p2_rs" id="p2_rs" class="inputUser"  placeholder="Digite em kPa" tabIndex="11" >
+                                </div>             
+                                <div class="inputBox">
+                                    <label for="t3_rs" class="labelInput">Temperatura na saída da caldeira:</label>
+                                    <input  type="number" name="t3_rs" id="t3_rs" class="inputUser"  placeholder="Digite em graus Kelvin" tabIndex="12">
+                                </div>
+                                <div class="inputBox">
+                                    <label for="fluid_type_rs" class="labelInput">Fluido </label>
+                                    <input type="text"  placeholder="Escolha" name="fluid_type_rs" id="fluid_type_rs" class="inputUser" list="fluid_list_rs" tabIndex="13">
+                                        <datalist id="fluid_list_rs">
+                                            <option value="NH3">Amônia</option>
+                                            <option value="Water">Água</option>
+                                            <option value="R134A">R134a</option>
+                                            <option value="R113">R113</option>
+                                        </datalist>
+                                </div>
+                                <div class="submit">
+                                    <button onclick="Get_Rankine_Simples()" tabIndex="14">Calcular</button>
+                              
+                                    <button onclick="Get_Rankine_Simples_plots_ts()" tabIndex="15">Gerar gráfico Ts</button>
+                              
+                                    <button  onclick="Get_Rankine_Simples_plots_pv()" tabIndex="16">Gerar gráfico Pv</button>
+                                </div>
+                                <div id="result">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tabs-content" data-tab="4">
+                    <div class="box-forms">
+                        <!--Quarto Formulário - Rankine Reaquecimento-->
+                        <form action="">
+                            <fieldset>
+                                <legend><i class="fas fa-fire"></i> Ciclo Rankine com Reaquecimento</legend>
+                                <div class="inputBox">
+                                    <label for="p1_rq" class="labelInput">Pressão inicial: </label>
+                                    <input type="number" name="p1_rq" id="p1_rq" class="inputUser"  placeholder="Digite em kPa"tabIndex="17" autofocus>
+                                </div>
+                                <div class="inputBox">
+                                    <label for="p2_rq" class="labelInput">Pressão na saída da bomba:</label>
+                                    <input  type="number" name="p2_rq" id="p2_rq" class="inputUser"  placeholder="Digite em kPa" tabIndex="18">
+                                </div>
+                                <div class="inputBox">
+                                    <label for="t3_rq" class="labelInput">Temperatura na saída da Caldeira:</label>
+                                    <input  type="number" name="t3_rq" id="t3_rq" class="inputUser"  placeholder="Digite em graus Kelvin" tabIndex="19">
+                                </div>
+                                <div class="inputBox">
+                                    <label for="p4_rq" class="labelInput">Pressão no reaquecedor:</label>
+                                    <input  type="number" name="p4_rq" id="p4_rq" class="inputUser"  placeholder="Digite em kPa" tabIndex="20">  
+                                </div>
+                                <div class="inputBox">
+                                    <label for="fluid_type_rq" class="labelInput">Fluido </label>
+                                    <input type="text"  placeholder="Escolha" name="fluid_type_rq" id="fluid_type_rq" class="inputUser" list="fluid_list_rq" tabIndex="21">
+                                        <datalist id="fluid_list_rq">
+                                            <option value="NH3">Amônia</option>
+                                            <option value="Water">Água</option>
+                                            <option value="R134A">R134a</option>
+                                            <option value="R113">R113</option>
+                                        </datalist>
+                                </div>
+                                <div class="submit">
+                                    <button  onclick="Get_Rankine_Reaq()" tabIndex="22">Calcular</button>
+                              
+                                    <button onclick="Get_Rankine_Reaquecimento_plots_ts()" tabIndex="23">Gerar gráfico Ts</button>
+                             
+                                    <button onclick="Get_Rankine_Reaquecimento_plots_pv()" tabIndex="24">Gerar gráfico Pv</button>
+                                </div>
+                                <div id="result">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="tabs-content" data-tab="5">
+                    <div class="box-forms">
+                        <!--Quinto Formulário - Rankine Regeneração-->
+                        <form action="">
+                            <fieldset>
+                                <legend><i class="fas fa-fire"></i> Ciclo Rankine com Regeneração</legend>
+                            
+                                <div class="inputBox">
+                                    <label for="p1_rg" class="labelInput">Pressão inicial: </label>
+                                    <input  type="number" name="p1_rg" id="p1_rg" class="inputUser"  placeholder="Digite em kPa" tabIndex="25" autofocus> 
+                                </div>
+                                <div class="inputBox">
+                                    <label for="p2_rg" class="labelInput">Pressão na saída da bomba:</label>
+                                    <input  type="number" name="p2_rg" id="p2_rg" class="inputUser"  placeholder="Digite em kPa" tabIndex="26">
+                                </div>
+                                <div class="inputBox">
+                                    <label for="t5_rg" class="labelInput">Temperatura na saída da Caldeira:</label>
+                                    <input  type="number" name="t5_rg" id="t5_rg" class="inputUser"  placeholder="Digite em graus Kelvin" tabIndex="27">
+                                    
+                                </div>
+                                <div class="inputBox">
+                                    <label for="p4_rg" class="labelInput">Pressão no regenerador:</label>
+                                    <input  type="number" name="p4_rg" id="p4_rg" class="inputUser"  placeholder="Digite em kPa" tabIndex="28">
+                                </div>
+                                <div class="inputBox">
+                                    <label for="fluid_type_rg" class="labelInput">Fluido </label>
+                                    <input type="text"  placeholder="Escolha" name="fluid_type_rg" id="fluid_type_rg" class="inputUser" list="fluid_list_rg" tabIndex="29">
+                                        <datalist id="fluid_list_rg">
+                                            <option value="NH3">Amônia</option>
+                                            <option value="Water">Água</option>
+                                            <option value="R134A">R134a</option>
+                                            <option value="R113">R113</option>
+                                        </datalist>
+                                    
+                                </div>
+
+                                <div class="submit">
+                                    <button  onclick="Get_Rankine_Reg()" tabIndex="30">Calcular</button>
+                              
+                                    <button onclick="Get_Rankine_Regeneracao_plots_ts()" tabIndex="31">Gerar gráfico Ts</button>
+                            
+                                    <button  onclick="Get_Rankine_Regeneracao_plots_pv()" tabIndex="32">Gerar gráfico Pv</button>
+                                </div>
+
+                                <div id="result"></div>
+                                    
+                
+                            </fieldset>
+                        </form>   
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        </div>
+
+        <footer>
+            <!-- <button onclick="recarrega()">Voltar</button> -->
+        </footer>
+
+        <script src="./scripts.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js"></script>
+        <script type="text/javascript">
+            $(document).on('keypress', 'input,select', function (e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                    var $next = $('[tabIndex=' + (+this.tabIndex + 1) + ']');
+                    console.log($next.length);
+                    if (!$next.length) {
+                   $next = $('[tabIndex=1]');        }
+                    $next.focus() .click();
+                }
+            });
+            </script>
+        
+       <!-- <script >
+        $(document).ready(function(){
+             $('#prop2_value').inputmask('(99)|(100)');
+        })
+        </script> -->
+    
+      </div>
+  </body>
+</html>
