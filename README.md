@@ -22,4 +22,4 @@ Todas as funcionalidades foram exaustivamente validadas por meio das bibliografi
 da Termodinâmica com seus exemplos e exercícios práticos, mostrando uma excelente confiabilidade
 nos cálculos. 
 
-![alt text](https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG)
+![Arquitetura](https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG)
