@@ -22,7 +22,7 @@ Todas as funcionalidades foram exaustivamente validadas por meio das bibliografi
 da Termodinâmica com seus exemplos e exercícios práticos, mostrando uma excelente confiabilidade
 nos cálculos. 
 
-![Arquitetura](https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG)
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG" alt="drawing" width="200"/>
 
 Tela inicial de propriedades de substância pura
 
