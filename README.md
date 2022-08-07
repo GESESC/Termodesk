@@ -31,5 +31,5 @@ Tela inicial de propriedades de substância pura
 
 Resultado para 3 substâncias diferentes 
 
-<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png" width="300" /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_b.png" width="300" /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_c.png" width="300" heigth = "400" />
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png" width="300" heigth = "400"  /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_b.png" width="300" heigth = "400"  /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_c.png" width="300" heigth = "400" />
 
