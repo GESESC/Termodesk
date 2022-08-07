@@ -15,6 +15,9 @@ das bibliotecas consagradas Coolprop e PYroMat, fundamentais para este projeto. 
 front end foi construída com ferramentas de desenvolvimento web (HTML,JavaScript e CSS),
 além do framework EEL JS que estrutura toda a comunicação da interface para o back end. 
 
+Arquitetura
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG"/>
+
 Com a tecnologia definida, cinco funcionalidades foram desenvolvidas: propriedades de substâncias
 puras, propriedades do ar como gás ideal e também o cálculo e plotagem dos diagramas T-s e P-v
 dos principais tipos de ciclo Rankine ideal (Simples, com Regeneração e com Reaquecimento).
@@ -22,9 +25,13 @@ Todas as funcionalidades foram exaustivamente validadas por meio das bibliografi
 da Termodinâmica com seus exemplos e exercícios práticos, mostrando uma excelente confiabilidade
 nos cálculos. 
 
-<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG"/>
-
 
 Tela inicial de propriedades de substância pura
 <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/tela_1.png"/>
 
+Resultado
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png"/>
+
+Diagrama 
+Pressão-volume específico (P-v)
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/rankine_simples_result_chart_a.png"/>
