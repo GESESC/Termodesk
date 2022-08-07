@@ -37,4 +37,7 @@ Diagrama Pressão-volume específico (P-v)
 
 <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/rankine_simples_result_chart_a.png" />
 
+Link da primei versão do Termodesk. A distribuição do software por enquanto é compatível apenas  com o sistema operacional Windows 10 de 64 bits, com objetivo de migrar para uma versão web no futuro.
+A pasta contém todos os arquivos necessários para o software, e dentro dela, há um arquivo com extensão .exe  e nome Termodesk para executá-lo.
 
+[Link da pasta no Google Drive](https://drive.google.com/drive/folders/1by3G7LK-Rsh9Ap_l4RsRNwkVwk3NV3Yw?usp=sharing)
