@@ -30,8 +30,5 @@ Tela inicial de propriedades de substância pura
 <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/tela_1.png"/>
 
 Resultado
-<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png"/> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/rankine_simples_result_chart_a.png"/>
-
-Diagrama 
-Pressão-volume específico (P-v)
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png"/> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_b.png"/> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_c.png"/>
 
