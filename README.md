@@ -29,6 +29,7 @@ nos cálculos.
 Tela inicial de propriedades de substância pura
 <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/tela_1.png"/>
 
-Resultado
-<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png" width="300" /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_b.png" width="300" /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_c.png" width="300" />
+Resultado para 3 substâncias diferentes 
+
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png" width="300" /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_b.png" width="300" /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_c.png" width="300" heigth = "400" />
 
