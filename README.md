@@ -26,5 +26,5 @@ nos cálculos.
 
 
 Tela inicial de propriedades de substância pura
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/tela_1.png"/>
 
-![Arquitetura](https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/tela_1.png)
