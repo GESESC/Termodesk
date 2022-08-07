@@ -23,3 +23,7 @@ da Termodinâmica com seus exemplos e exercícios práticos, mostrando uma excel
 nos cálculos. 
 
 ![Arquitetura](https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/arquitetura.PNG)
+
+Tela inicial de propriedades de substância pura
+
+![Arquitetura](https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/tela_1.png)
