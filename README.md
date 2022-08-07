@@ -33,3 +33,7 @@ Resultado para 3 substâncias diferentes
 
 <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_a.png" width="300" heigth = "400"  /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_b.png" width="300" heigth = "400"  /> <img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/subs_result_c.png" width="300" heigth = "400" />
 
+Diagrama Pressão-volume específico (P-v)
+<img src="https://github.com/douglas-dm9/Termodesk/blob/main/images-in-readme/rankine_simples_result_chart_a.png" width="300" heigth = "400" />
+
+
